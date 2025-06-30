@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="MaSinhVien">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+
+        <xs:length value="8" />
+        <xs:pattern value="SV[0-9]{6}" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+  <xs:element name="HoTen">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:maxLength value="50" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+  <xs:element name="Tuoi">
+    <xs:simpleType>
+      <xs:restriction base="xs:int">
+        <xs:minInclusive value="18" />
+        <xs:maxInclusive value="30" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+  <xs:element name="Lop" type="xs:string" />
+
+  <xs:complexType name="SinhVien">
+    <xs:sequence>
+      <xs:element ref="MaSinhVien" />
+      <xs:element ref="HoTen" />
+      <xs:element ref="Tuoi" />
+      <xs:element ref="Lop" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="DanhSachSinhVien">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="SinhVien" type="SinhVien" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

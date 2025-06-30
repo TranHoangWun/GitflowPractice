@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.example.com/donhang"
+           xmlns:dh="http://www.example.com/donhang"
+           xmlns:sp="http://www.example.com/sanpham"
+           elementFormDefault="qualified">
+
+    <!-- Nhập khẩu schema sanpham.xsd -->
+    <xs:import namespace="http://www.example.com/sanpham" schemaLocation="sanpham.xsd" />
+
+    <xs:element name="donhang">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="madonhang">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="DH\d{6}"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+
+                <xs:element name="ngaydat">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:date"/>
+                    </xs:simpleType> 
+                </xs:element> 
+
+                <xs:element name="sanpham">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="sp:sanpham" maxOccurs="unbounded" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

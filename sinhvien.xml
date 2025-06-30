@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DanhSachSinhVien
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="sinhvien.xsd">
+    <SinhVien>
+        <MaSinhVien>SV123456</MaSinhVien>
+        <HoTen>Phạm Hoàng Anh</HoTen>
+        <Tuoi>21</Tuoi>
+        <Lop>K46A</Lop>
+    </SinhVien>
+    <SinhVien>
+        <MaSinhVien>SV654321</MaSinhVien>
+        <HoTen>Hoàng Trọng Lực</HoTen>
+        <Tuoi>22</Tuoi>
+        <Lop>K46C</Lop>
+    </SinhVien>
+</DanhSachSinhVien>

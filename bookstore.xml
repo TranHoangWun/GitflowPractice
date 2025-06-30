@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<bookstore>
+    <book category="science">
+        <title>XML basic</title>
+        <author>Hoang Anh</author>
+        <price>5.000.000</price>
+    </book>
+</bookstore>

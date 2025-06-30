@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalog SYSTEM "catalog.dtd">
+<catalog>
+  <product id="SP01" category="electronics">
+    <name>Samsung Galaxy S25 Ultra</name>
+    <price>30.000.000</price>
+    <description>Sỡ hữu chip snapdragon 8 elite.</description>
+  </product>
+
+  <product id="SV02" category="fashion">
+    <name>Áo thun nam Nike</name>
+    <price>250.000</price>
+    <description>Áo thun cotton cao cấp.</description>
+  </product>
+
+  <product id="SP03" category="home">
+    <name>Bàn ikea Hà Nội .</name>
+    <price>199.99</price>
+    <description>Bàn làm việc chất liệu gỗ tự nhiên, thiết kế hiện đại, bền bỉ.</description>
+  </product>
+</catalog>

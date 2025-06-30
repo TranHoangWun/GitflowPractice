@@ -1,0 +1,18 @@
+
+<bookstore>
+    <book category="fiction">
+        <title lang="en">Harry Potter</title>
+        <author>J.K. Rowling</author>
+        <price>29.99</price>
+    </book>
+    <book category="web">
+        <title lang="en">Learning XML</title>
+        <author>John Smith</author>
+        <price>39.95</price>
+    </book>
+    <book category="database">
+        <title lang="en">Mastering SQL</title>
+        <author>Jane Doe</author>
+        <price>45.00</price>
+    </book>
+</bookstore>
