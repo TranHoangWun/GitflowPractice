@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<donhang xmlns="http://www.example.com/donhang"
+         xmlns:sp="http://www.example.com/sanpham">
+    
+    <madonhang>DH123456</madonhang>
+    <ngaydat>2025-01-19</ngaydat>
+    
+    <sanpham>
+        <sp:sanpham>
+            <sp:masp>SP1001</sp:masp>
+            <sp:tensp>Điện thoại</sp:tensp>
+            <sp:gia>15000000</sp:gia>
+        </sp:sanpham>
+        <sp:sanpham>
+            <sp:masp>SP1002</sp:masp>
+            <sp:tensp>Laptop</sp:tensp>
+            <sp:gia>45000000</sp:gia>
+        </sp:sanpham>
+    </sanpham>
+</donhang>

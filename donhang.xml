@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<donhang>
+    <madonhang>123456</madonhang>
+    <ngaydat>2025-03-19</ngaydat>
+    
+    <khachhang>
+        <hoten>Phạm Hoàng Anh</hoten>
+        <diachi>123 Đường Nguyễn Huệ, Phường Phước Vĩnh, TP.Huế</diachi>
+    </khachhang>
+    
+    <sanpham>
+        <product>
+            <tensp>Điện thoại</tensp>
+            <soluong>2</soluong>
+            <giatien>15000000</giatien>
+        </product>
+        <product>
+            <tensp>Laptop</tensp>
+            <soluong>1</soluong>
+            <giatien>50000000</giatien>
+        </product>
+    </sanpham>
+</donhang>

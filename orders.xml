@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE orders SYSTEM "orders.dtd">
+<orders>
+  <order id="O001" status="pending">
+    <customer>
+      <name>Phạm Hoàng Anh</name>
+      <email>arl74vn@gmail.com</email>
+      <phone>0123456789</phone>
+    </customer>
+    <items>
+      <item>
+        <name>Samsung Galaxy S25</name>
+        <quantity>1</quantity>
+        <price>999.99</price>
+      </item>
+      <item>
+        <name>Áo thun nam Yody</name>
+        <quantity>2</quantity>
+        <price>25.99</price>
+      </item>
+    </items>
+  </order>
+
+  <order id="O002" status="shipped">
+    <customer>
+      <name>Lê Quang Tuyến</name>
+      <email>tuyen@gmail.com</email>
+      <phone>0987654321</phone>
+    </customer>
+    <items>
+      <item>
+        <name>MacBook Pro 14</name>
+        <quantity>1</quantity>
+        <price>1599.99</price>
+      </item>
+      <item>
+        <name>Chuột không dây Logitech</name>
+        <quantity>1</quantity>
+        <price>29.99</price>
+      </item>
+    </items>
+  </order>
+</orders>

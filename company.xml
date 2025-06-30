@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE company SYSTEM "company.dtd">
+<company>
+  <employee id="NV01">
+    <name>Phạm Hoàng Anh</name>
+    <position>Giám đốc</position>
+    <salary>12000000</salary>
+  </employee>
+
+  <employee id="NV02">
+    <name>Trần Thị Lý</name>
+    <position>Kỹ thuật</position>
+    <salary>8500000</salary>
+  </employee>
+
+  <employee id="NV03">
+    <name>Lê Quang Tuyến</name>
+    <position>Kế toán</position>
+    <salary>6000000</salary>
+  </employee>
+</company>
