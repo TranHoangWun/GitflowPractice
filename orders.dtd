@@ -1,0 +1,14 @@
+<!ELEMENT orders (order+)>
+<!ELEMENT order (customer, items)>
+<!ATTLIST order id ID #REQUIRED>
+<!ATTLIST order status (pending|shipped|delivered) #REQUIRED>
+
+<!ELEMENT customer (name, email, phone)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+
+<!ELEMENT items (item+)>
+<!ELEMENT item (name, quantity, price)>
+<!ELEMENT quantity (#PCDATA)>
+<!ELEMENT price (#PCDATA)>

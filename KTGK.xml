@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Customers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="KTGK.xsd">
+  
+  <Products>
+    <Product>
+      <ProductID>101</ProductID>
+      <ProductName>IPhone 16</ProductName>
+      <UnitPrice>1000000</UnitPrice>
+    </Product>
+    <Product>
+      <ProductID>102</ProductID>
+      <ProductName>IPhone 16 Plus</ProductName>
+      <UnitPrice>150000</UnitPrice>
+    </Product>
+    <Product>
+      <ProductID>103</ProductID>
+      <ProductName>IPhone 16 Pro</ProductName>
+      <UnitPrice>1700000</UnitPrice>
+    </Product>
+  </Products>
+
+  <Customer>
+    <CustomerID>1</CustomerID>
+    <Name>Phạm Hoàng Anh</Name>
+    <Phone>0987654321</Phone>
+    <Invoices>
+      <Invoice>
+        <InvoiceID>1001</InvoiceID>
+        <InvoiceDate>2025-04-01</InvoiceDate>
+        <InvoiceDetails>
+          <Product>
+            <ProductID>101</ProductID>
+            <Quantity>2</Quantity>
+            <TotalAmount>200000</TotalAmount>
+          </Product>
+          <Product>
+            <ProductID>102</ProductID>
+            <Quantity>1</Quantity>
+            <TotalAmount>500000</TotalAmount>
+          </Product>
+        </InvoiceDetails>
+      </Invoice>
+
+      <Invoice>
+        <InvoiceID>1002</InvoiceID>
+        <InvoiceDate>2025-04-02</InvoiceDate>
+        <InvoiceDetails>
+          <Product>
+            <ProductID>103</ProductID>
+            <Quantity>1</Quantity>
+            <TotalAmount>150000</TotalAmount>
+          </Product>
+        </InvoiceDetails>
+      </Invoice>
+    </Invoices>
+  </Customer>
+
+  <Customer>
+    <CustomerID>74</CustomerID>
+    <Name>Trần Hoàng Anh</Name>
+    <Phone>0912345678</Phone>
+    <Invoices>
+      <Invoice>
+        <InvoiceID>1003</InvoiceID>
+        <InvoiceDate>2025-04-03</InvoiceDate>
+        <InvoiceDetails>
+          <Product>
+            <ProductID>101</ProductID>
+            <Quantity>3</Quantity>
+            <TotalAmount>300000</TotalAmount>
+          </Product>
+        </InvoiceDetails>
+      </Invoice>
+    </Invoices>
+  </Customer>
+  
+</Customers>

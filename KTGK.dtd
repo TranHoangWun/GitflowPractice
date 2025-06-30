@@ -1,0 +1,22 @@
+<!ELEMENT Customers (Products, Customer+)>
+
+<!ELEMENT Products (Product+)>
+<!ELEMENT Product (ProductID, ProductName, UnitPrice)>
+<!ELEMENT ProductID (#PCDATA)>
+<!ELEMENT ProductName (#PCDATA)>
+<!ELEMENT UnitPrice (#PCDATA)>
+
+<!ELEMENT Customer (CustomerID, Name, Phone, Invoices)>
+<!ELEMENT CustomerID (#PCDATA)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Phone (#PCDATA)>
+
+<!ELEMENT Invoices (Invoice+)>
+<!ELEMENT Invoice (InvoiceID, InvoiceDate, InvoiceDetails)>
+<!ELEMENT InvoiceID (#PCDATA)>
+<!ELEMENT InvoiceDate (#PCDATA)>
+<!ELEMENT InvoiceDetails (Product+)>
+
+<!ELEMENT Product (ProductID, Quantity, TotalAmount)>
+<!ELEMENT Quantity (#PCDATA)>
+<!ELEMENT TotalAmount (#PCDATA)>

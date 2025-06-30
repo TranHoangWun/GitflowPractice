@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="Customers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Products">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Product" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ProductID" type="xs:int"/>
+                    <xs:element name="ProductName" type="xs:string"/>
+                    <xs:element name="UnitPrice" type="xs:decimal"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="Customer" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CustomerID" type="xs:int"/>
+              <xs:element name="Name" type="xs:string"/>
+              <xs:element name="Phone" type="xs:string"/>
+              <xs:element name="Invoices">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Invoice" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="InvoiceID" type="xs:int"/>
+                          <xs:element name="InvoiceDate" type="xs:date"/>
+                          <xs:element name="InvoiceDetails">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Product" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="ProductID" type="xs:int"/>
+                                      <xs:element name="Quantity" type="xs:int"/>
+                                      <xs:element name="TotalAmount" type="xs:decimal"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+      </xs:sequence>
+    </xs:complexType>
+    
+    <xs:unique name="uniqueCustomerID">
+      <xs:selector xpath="Customer"/>
+      <xs:field xpath="CustomerID"/>
+    </xs:unique>
+  </xs:element>
+
+  <xs:element name="Phone">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="\d{10,11}"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+  <xs:element name="Quantity">
+    <xs:simpleType>
+      <xs:restriction base="xs:int">
+        <xs:minInclusive value="1"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+  <xs:element name="UnitPrice">
+    <xs:simpleType>
+      <xs:restriction base="xs:decimal">
+        <xs:minExclusive value="0"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+  <xs:element name="Name">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:minLength value="3"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+</xs:schema>

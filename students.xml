@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE students SYSTEM "students.dtd">
+<students>
+  <student identify="SV01" gender="male">
+    <name>Pham Hoang Anh</name>
+    <age>21</age>
+  </student>
+
+  <student identify="SV02" gender="female">
+    <name>Phan Thi Kieu Trinh</name>
+    <age>18</age>
+    <email>trinh2006@gmail.com</email>
+  </student>
+
+  <student identify="SV03" gender="male" >
+    <name>Ngo Duy Zin</name>
+    <age>23</age>
+    <phone>0147852369</phone>
+  </student>
+</students>
